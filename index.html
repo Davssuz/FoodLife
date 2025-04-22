@@ -4,20 +4,54 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FOOD LIFE</title>
+    <!-- Agregar meta descripción para mejorar el SEO -->
+    <meta
+      name="description"
+      content="Descubre productos saludables y deliciosos como galletas, barritas y batidos. Energía limpia y sabor real para tu día a día."
+    />
+    <!-- Preconectar a orígenes requeridos -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
     <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Precargar recursos esenciales -->
+    <link rel="preload" href="style.css" as="style" />
+    <link
+      rel="preload"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+      as="style"
+    />
+    <link
+      rel="preload"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"
+      as="script"
+    />
+    <link rel="preload" href="images/logo.svg" as="image" />
   </head>
   <body>
     <header>
       <div class="menu container">
-        <img class="logo-1" src="images/logo.svg" alt="" />
+        <img
+          class="logo-1"
+          src="images/logo.svg"
+          alt="logo de FOOD LIFE"
+          width="550"
+          height="400"
+        />
         <input type="checkbox" id="menu" />
         <label for="menu">
-          <img src="images/menu.png" class="menu-icono" alt="" />
+          <img
+            src="images/menu.webp"
+            class="menu-icono"
+            alt="Imagen de menu"
+            width="550"
+            height="400"
+          />
         </label>
         <nav class="navbar">
           <div class="menu-1">
@@ -26,7 +60,13 @@
               <li><a href="#horario" class="menu-btn">Horario</a></li>
             </ul>
           </div>
-          <img class="logo-2" src="images/logo.svg" alt="" />
+          <img
+            class="logo-2"
+            src="images/logo.svg"
+            alt="logo de FOOD LIFE"
+            width="550"
+            height="400"
+          />
           <div class="menu-2">
             <ul></ul>
             <div class="socials">
@@ -97,7 +137,13 @@
                   </div>
                 </div>
                 <div class="slider-img">
-                  <img src="images/Slider2.png" alt="" />
+                  <img
+                    src="images/Slider2.webp"
+                    alt="Imagen del slider 2 mostrando un producto"
+                    width="550"
+                    height="400"
+                    loading="lazy"
+                  />
                 </div>
               </div>
             </div>
@@ -122,7 +168,13 @@
                   </div>
                 </div>
                 <div class="slider-img">
-                  <img src="images/Slider1.png" alt="" />
+                  <img
+                    src="images/Slider1.webp"
+                    alt="Imagen del slider 1 mostrando un producto"
+                    width="550"
+                    height="400"
+                    loading="lazy"
+                  />
                 </div>
               </div>
             </div>
@@ -147,7 +199,13 @@
                   </div>
                 </div>
                 <div class="slider-img">
-                  <img src="images/Slider3.png" alt="" />
+                  <img
+                    src="images/Slider3.webp"
+                    alt="Imagen del slider 3 mostrando un producto"
+                    width="550"
+                    height="400"
+                    loading="lazy"
+                  />
                 </div>
               </div>
             </div>
@@ -177,7 +235,12 @@
                 <div class="product">
                   <div class="product-img">
                     <h4>Nuevo</h4>
-                    <img src="images/food4.png" alt="" />
+                    <img
+                      src="images/food4.webp"
+                      alt="Imagen de galleta de avena"
+                      width="550"
+                      height="400"
+                    />
                   </div>
                   <div class="product-txt">
                     <h4>Avena y frutos secos</h4>
@@ -194,7 +257,12 @@
                 <div class="product">
                   <div class="product-img">
                     <h4>Nuevo</h4>
-                    <img src="images/food5.png" alt="" />
+                    <img
+                      src="images/food5.webp"
+                      alt="Imagen de galleta de avena y chocolate"
+                      width="550"
+                      height="400"
+                    />
                   </div>
                   <div class="product-txt">
                     <h4>Avena y Chocolate</h4>
@@ -211,7 +279,12 @@
                 <div class="product">
                   <div class="product-img">
                     <h4>Nuevo</h4>
-                    <img src="images/food6.png" alt="" />
+                    <img
+                      src="images/food6.webp"
+                      alt="imagen de pack de 4 mini galletas"
+                      width="550"
+                      height="400"
+                    />
                   </div>
                   <div class="product-txt">
                     <h4>Mini Pack de Galletas</h4>
@@ -240,7 +313,12 @@
                 <div class="product">
                   <div class="product-img">
                     <h4>Nuevo</h4>
-                    <img src="images/food1.png" alt="" />
+                    <img
+                      src="images/food1.webp"
+                      alt="Imagen de barrita de avena y frutos secos"
+                      width="550"
+                      height="400"
+                    />
                   </div>
                   <div class="product-txt">
                     <h4>Avena y frutos secos</h4>
@@ -257,7 +335,12 @@
                 <div class="product">
                   <div class="product-img">
                     <h4>Nuevo</h4>
-                    <img src="images/food3.png" alt="" />
+                    <img
+                      src="images/food3.webp"
+                      alt="Imgen de barrita de avena y chocolate"
+                      width="550"
+                      height="400"
+                    />
                   </div>
                   <div class="product-txt">
                     <h4>Avena y Chocolate</h4>
@@ -286,7 +369,12 @@
                 <div class="product">
                   <div class="product-img">
                     <h4>Nuevo</h4>
-                    <img src="images/food8.png" alt="" />
+                    <img
+                      src="images/food8.webp"
+                      alt="Imagen de batido de mora"
+                      width="550"
+                      height="400"
+                    />
                   </div>
                   <div class="product-txt">
                     <h4>Mora o Fresa</h4>
@@ -302,7 +390,12 @@
                 <div class="product">
                   <div class="product-img">
                     <h4>Nuevo</h4>
-                    <img src="images/food9.png" alt="" />
+                    <img
+                      src="images/food9.webp"
+                      alt="Imagen de batido de chocolate"
+                      width="550"
+                      height="400"
+                    />
                   </div>
                   <div class="product-txt">
                     <h4>Chocolate</h4>
@@ -326,7 +419,12 @@
 
     <section class="info container">
       <div class="info-img">
-        <img src="images/logo.svg" alt="" />
+        <img
+          src="images/logo.svg"
+          alt="logo de FOOD LIFE"
+          width="550"
+          height="400"
+        />
       </div>
 
       <div class="info-txt">
@@ -411,19 +509,15 @@
 
     <footer class="footer">
       <div class="footer-content">
-        <img
-          class="foto"
-          src="images/foto.png"
-          alt="Foto de Maria Fernanda"
-        />
+        <img class="foto" src="images/foto.webp" alt="Foto de Maria Fernanda" />
         <div class="footer-text">
           <h4>Detrás de Food Life</h4>
           <p>
             María Fernanda Rincón es una emprendedora colombiana apasionada por
             la alimentación saludable y el bienestar integral. Con una formación
             en administración de empresas y una visión clara de transformar la
-            manera en que las personas se alimentan, fundó FoodLife, una
-            empresa dedicada a ofrecer opciones nutritivas y deliciosas.
+            manera en que las personas se alimentan, fundó FoodLife, una empresa
+            dedicada a ofrecer opciones nutritivas y deliciosas.
           </p>
           <p>
             Su visión es inspirar a las personas a adoptar un estilo de vida más
@@ -433,18 +527,21 @@
             para mejorar nuestra salud y bienestar.
           </p>
           <p>
-            Con FoodLife, María Fernanda busca educar y empoderar a la
-            comunidad sobre la importancia de una dieta equilibrada y la
-            elección de ingredientes naturales. Su compromiso con la calidad y
-            la innovación la ha llevado a crear una marca que no solo ofrece
-            productos excepcionales, sino que también promueve un cambio
-            positivo en los hábitos alimenticios de sus clientes.
+            Con FoodLife, María Fernanda busca educar y empoderar a la comunidad
+            sobre la importancia de una dieta equilibrada y la elección de
+            ingredientes naturales. Su compromiso con la calidad y la innovación
+            la ha llevado a crear una marca que no solo ofrece productos
+            excepcionales, sino que también promueve un cambio positivo en los
+            hábitos alimenticios de sus clientes.
           </p>
         </div>
       </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script src="script.js" defer></script>
   </body>
 </html>
