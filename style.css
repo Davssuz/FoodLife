@@ -104,6 +104,7 @@ body {
   border-radius: 50px;
   transition: background-color 0.3s, color 0.3s;
   margin: 0 5px;
+  text-decoration: none; /* Eliminar subrayado */
 }
 .menu-btn:hover {
   background-color: #6a704c;
@@ -124,6 +125,7 @@ body {
   border-radius: 50px;
   transition: background-color 0.3s, color 0.3s;
   margin: 0 5px;
+  text-decoration: none; /* Eliminar subrayado */
 }
 .menu .navbar ul li a:hover {
   background-color: #6a704c;
@@ -146,16 +148,30 @@ body {
 .slider {
   display: flex;
   align-items: center;
-  justify-content: center;
-  height: 100vh;
+  justify-content: center; /* Centrar contenido del slider */
+  flex-wrap: wrap; /* Permitir que el contenido se ajuste en dispositivos pequeños */
+  gap: 20px; /* Espaciado uniforme entre texto e imagen */
 }
+
 .slider-txt {
-  margin-left: 85px;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex: 1;
+  text-align: center; /* Centrar texto */
+  margin: 0 20px; /* Espaciado lateral */
 }
+
+.slider-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-img img {
+  max-width: 80%; /* Ajustar tamaño máximo de las imágenes */
+  height: auto;
+  object-fit: contain; /* Asegurar que las imágenes se ajusten correctamente */
+}
+
 .slider-txt h1 {
   font-size: 70px;
   color: #ffffff;
@@ -179,19 +195,10 @@ body {
   text-transform: uppercase;
   margin-right: 20px;
   border-radius: 50px;
+  text-decoration: none; /* Eliminar subrayado */
 }
 .btn-1:hover {
   background-color: #6a704c;
-}
-.slider-img {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.slider-img img {
-  margin-right: 80px;
-  width: 550px;
 }
 .products {
   background-color: #0d0d0d;
@@ -314,6 +321,7 @@ body {
   font-weight: 800;
   text-transform: uppercase;
   border-radius: 50px;
+  text-decoration: none; /* Eliminar subrayado */
 }
 .btn-2:hover {
   background-color: #52573b;
