@@ -12,8 +12,17 @@ body {
 /* Diferir CSS no crítico */
 @import url("https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css");
 
+/* Permitir desplazamiento horizontal solo en los sliders y productos */
+.slider,
+.swiper-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* Suavizar desplazamiento en móviles */
+}
+
+/* Asegurar que el contenido esté centrado y no se desplace horizontalmente */
 .container {
   max-width: 100%; /* Asegurar que el contenido ocupe todo el ancho */
+  margin: 0 auto;
   padding: 0 15px; /* Añadir espacio lateral para evitar que el contenido toque los bordes */
   box-sizing: border-box;
 }
@@ -555,5 +564,74 @@ iframe {
   }
   .links h4 {
     margin: 25px 0px 10px 0px;
+  }
+}
+
+/* Mejorar diseño para móviles */
+@media (max-width: 576px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .menu .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .slider {
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .slider-txt {
+    text-align: center;
+  }
+
+  .slider-img img {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .tabs label {
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px 0;
+  }
+
+  .product {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto 20px;
+  }
+
+  .product-img img {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .info {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .info-img img {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .horario-txt {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .txt {
+    width: 100%;
+    max-width: 300px;
   }
 }
