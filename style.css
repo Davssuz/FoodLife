@@ -2,6 +2,9 @@
 body {
   background-color: #080202;
   font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Evitar desplazamiento horizontal */
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap");
@@ -10,8 +13,9 @@ body {
 @import url("https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css");
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 100%; /* Asegurar que el contenido ocupe todo el ancho */
+  padding: 0 15px; /* Añadir espacio lateral para evitar que el contenido toque los bordes */
+  box-sizing: border-box;
 }
 .swiper-button-prev::after,
 .swiper-button-next::after {
@@ -144,6 +148,8 @@ body {
 .header-content {
   margin-top: 200px;
   padding-bottom: 50px;
+  text-align: center; /* Centrar el contenido */
+  padding: 20px;
 }
 .slider {
   display: flex;
@@ -187,14 +193,16 @@ body {
 }
 .btn-1 {
   display: inline-block;
-  padding: 15px 35px;
+  padding: 10px 20px;
+  font-size: 14px;
+  text-align: center;
+  margin: 10px auto;
+  border-radius: 50px;
   border: 2px solid #6a704c;
   color: #ffffff;
   font-weight: 800;
   letter-spacing: 2px;
   text-transform: uppercase;
-  margin-right: 20px;
-  border-radius: 50px;
   text-decoration: none; /* Eliminar subrayado */
 }
 .btn-1:hover {
@@ -315,12 +323,15 @@ body {
 }
 .btn-2 {
   display: inline-block;
-  padding: 15px 35px;
+  padding: 10px 20px;
+  font-size: 14px;
+  text-align: center;
+  margin: 10px auto;
+  border-radius: 50px;
   background-color: #6a704c;
   color: #ffffff;
   font-weight: 800;
   text-transform: uppercase;
-  border-radius: 50px;
   text-decoration: none; /* Eliminar subrayado */
 }
 .btn-2:hover {
@@ -329,6 +340,10 @@ body {
 .horario {
   padding: 100px 0px;
   background-color: #0d0d0d;
+}
+.horario-info {
+  text-align: center; /* Centrar el texto del horario */
+  padding: 20px;
 }
 .horario-info h2 {
   font-size: 75px;
@@ -339,10 +354,12 @@ body {
 }
 .horario-txt {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column; /* Alinear los elementos verticalmente */
+  align-items: center; /* Centrar los elementos */
 }
 .txt {
   color: #ffffff;
+  margin-bottom: 20px; /* Añadir espacio entre los bloques de texto */
 }
 .txt h4 {
   font-size: 18px;
@@ -399,9 +416,10 @@ body {
   display: inline-block;
 }
 img {
-  width: auto;
-  height: auto;
   max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 img,
 iframe {
