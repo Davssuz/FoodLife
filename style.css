@@ -216,18 +216,75 @@ img {
 }
 @media (max-width: 900px) {
   .menu {
-    flex-direction: column;
+    flex-direction: row;
     min-height: unset;
-    padding: 20px 0 0 0;
+    padding: 0 5px;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu-1, .menu-2 {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    width: auto;
+  }
+  .menu-1 ul, .menu-2 ul {
+    gap: 8px;
   }
   .logo-2 {
-    margin: 10px 0;
+    width: 54px;
+    height: 54px;
+    margin: 0 4px;
   }
-  .menu-1,
-  .menu-2 {
+  .menu-btn {
+    font-size: 0.95rem;
+    padding: 5px 10px;
+    border-width: 1.5px;
+  }
+}
+@media (max-width: 600px) {
+  .menu {
+    display: flex;
     justify-content: center;
-    width: 100%;
-    margin-bottom: 10px;
+    align-items: center;
+    padding: 0;
+    min-height: 60px;
+    width: 100vw;
+    background: #6a704c;
+  }
+  .menu-1, .menu-2 {
+    display: none !important;
+  }
+  .logo-2 {
+    display: block !important;
+    margin: 0 auto;
+    width: 38px;
+    height: 38px;
+    position: static;
+    left: unset;
+    transform: none;
+  }
+}
+@media (min-width: 601px) {
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    min-height: 100px;
+    width: 100vw;
+    background: #6a704c;
+  }
+  .menu-1, .menu-2 {
+    display: flex !important;
+  }
+  .logo-2 {
+    display: block !important;
+    margin: 0 auto;
+    width: 90px;
+    height: 90px;
   }
 }
 
